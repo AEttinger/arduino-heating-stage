@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    <header>
+      <div class="blog-masthead">
+        <div class="container">
+          {% include navbar.html %}
+        </div>
+      </div>
+
+      <div class="blog-header">
+        <div class="container">
+          <h1 class="blog-title">{{ site.title }}</h1>
+          <p class="lead blog-description">{{ site.description }}</p>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container">
+      {{ content }}
+    </main>
+
+  {% include footer.html %}
+
+  </body>
+</html>
