@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link active" href="{{ url }}">Blog</a>
+        <a class="nav-link active" href="{{ site.url }}">Blog</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -17,7 +17,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           {% for repository in site.github.public_repositories %}
             {% if repository.name != "aettinger.github.io" %}
-          <a class="dropdown-item" href="{{ repository.name | url }}">{{ repository.name | replace: "-", " " | capitalize }}</a>
+          <a class="dropdown-item" href="{{ repository.name | prepend: site.url }}">{{ repository.name | replace: "-", " " | capitalize }}</a>
             {% endif %}
           {% endfor %}
         </div>
