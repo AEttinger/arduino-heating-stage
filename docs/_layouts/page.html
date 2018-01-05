@@ -14,8 +14,8 @@
 
       <div class="blog-header">
         <div class="container">
-          <h1 class="blog-title">{{ site.title | replace: "-", " " | capitalize }}</h1>
-          <p class="lead blog-description">{{ site.description }}</p>
+          <h1 class="blog-title">{{ page.title | replace: "-", " " | capitalize }}</h1>
+          <p class="lead blog-description">{{ page.description }}</p>
         </div>
       </div>
     </header>
@@ -23,37 +23,9 @@
     {% assign carousel_images = site.static_files | where "carousel", true %}
     {% assign carousel_size = carousel_images | size %}
 
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-
       {% for i in (1..carousel_size) %}
-      <div class="carousel-inner">
-        <div class="carousel-item {% if i==1 %}active{% endif %}">
-          <img class="slide-{{i}}" src="{{ }}" alt="{{ carousel_images[i].name }}">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+       {{ i }}
       {% endfor %}
-
-
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
 
   {{ content }}
 
