@@ -33,12 +33,11 @@
 
       <div class="carousel-inner">
         {% for carousel_image in carousel_images %}
-        <div class="carousel-item active">
-          <img class="" src="{{ carousel_image.path }}" alt="Slide">
+        {% if carousel_image.name == "first_image.png" %}{% assign slide="active" %}{% endif %}
+        <div class="carousel-item {{ slide }}">
+          <img src="{{ carousel_image.path | prepend: "/"+site.url }}" alt="Slide">
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
             </div>
           </div>
         </div>
