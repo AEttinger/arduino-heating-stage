@@ -11,16 +11,16 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         {% for i in (1..carousel_size) %}
-        {% if i==1 %}{% assign slide="active" %}{% endif %}
+        {% if i==1 %}{% assign slide="active" %}{% else %}{% assign slide="" %}{% endif %}
         <li data-target="#myCarousel" data-slide-to="{{ i-1 }}{{ slide }}"></li>
         {% endfor %}
       </ol>
 
       <div class="carousel-inner">
         {% for carousel_image in carousel_images %}
-        {% if carousel_image.name == "first_image.png" %}{% assign slide="active" %}{% endif %}
+        {% if carousel_image.name == "first_image.png" %}{% assign slide="active" %}{% else %}{% assign slide="" %}{% endif %}
         <div class="carousel-item {{ slide }}">
-          <img src="{{ carousel_image.path | prepend: "/"+site.url }}" alt="Slide">
+          <img src="{{ carousel_image.path | prepend: url }}" alt="Slide">
           <div class="container">
             <div class="carousel-caption text-left">
             </div>
