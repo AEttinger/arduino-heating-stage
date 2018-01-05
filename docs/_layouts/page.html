@@ -20,7 +20,7 @@
         {% for carousel_image in carousel_images %}
         {% if carousel_image.name == "first_image.png" %}{% assign slide="active" %}{% else %}{% assign slide="" %}{% endif %}
         <div class="carousel-item {{ slide }}">
-          <img src="{{ carousel_image.path | prepend: site.baseurl }}" alt="Slide">
+          <img class="d-block w-100" src="{{ carousel_image.path | prepend: site.baseurl }}" alt="Slide">
           <div class="container">
             <div class="carousel-caption text-left">
             </div>
