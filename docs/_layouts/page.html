@@ -5,21 +5,6 @@
 
   <body>
 
-    <header>
-      <div class="blog-masthead">
-        <div class="container">
-          {% include navbar.html %}
-        </div>
-      </div>
-
-      <div class="blog-header">
-        <div class="container">
-          <h1 class="blog-title">{{ site.title | replace: "-", " " | capitalize }}</h1>
-          <p class="lead blog-description">{{ site.description }}</p>
-        </div>
-      </div>
-    </header>
-
     {% assign carousel_images = site.static_files | where: "carousel", true %}
     {% assign carousel_size = carousel_images | size %}
 
@@ -54,6 +39,21 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+
+    <header>
+      <div class="blog-masthead">
+        <div class="container">
+          {% include navbar.html %}
+        </div>
+      </div>
+
+      <div class="blog-header">
+        <div class="container">
+          <h1 class="blog-title">{{ site.title | replace: "-", " " | capitalize }}</h1>
+          <p class="lead blog-description">{{ site.description }}</p>
+        </div>
+      </div>
+    </header>
 
   {{ content }}
 
