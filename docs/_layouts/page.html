@@ -21,6 +21,16 @@
     </header>
 
     {% assign carousel_images = site.static_files | where: "carousel", true %}
+    {% assign carousel_size = carousel_images | size %}
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        {% for i in (1..carousel_size) %}
+        <li data-target="#myCarousel" data-slide-to="{{ i }}"></li>
+        {% endfor %}
+      </ol>
+
+
     {% for carousel_image in carousel_images %}
       {{ carousel_image.name }}
     {% endfor %}
