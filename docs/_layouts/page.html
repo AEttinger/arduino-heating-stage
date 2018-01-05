@@ -20,13 +20,6 @@
       </div>
     </header>
 
-    {% assign carousel_images = site.static_files | where "carousel", true %}
-    {% assign carousel_size = carousel_images | size %}
-
-      {% for i in (1..carousel_size) %}
-       {{ i }}
-      {% endfor %}
-
   {{ content }}
 
   {% include footer.html %}
