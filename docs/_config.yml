@@ -1,6 +1,6 @@
 description: "A do-it-yourself heating stage with Arduino."
 defaults:
-  - scope:
-      path: "assets/images/carousel"
-    values:
-      carousel: true
+ - scope:
+    path: "assets/images/carousel"
+   values:
+    carousel: true
