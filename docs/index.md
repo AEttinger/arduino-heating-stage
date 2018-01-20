@@ -46,3 +46,11 @@ layout: page
     {% endfor %}
   </div>
 </div>
+
+{% for item in site.project_description %}
+  {% assign section_title = item.title | split: " " %}
+  <div class="blog-post">
+    <h2 class="blog-post-title" id="{{ item.title }}">{{ section_title[1] }}</h2>
+    {{ item.content }}
+  </div>
+{% endfor %}
