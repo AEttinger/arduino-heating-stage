@@ -9,4 +9,4 @@ From a different project I knew that Peltier elements can be used for efficientl
 
 Just a small note, if anybody wants to use this design: In the CAD files I used dimensions fitting the round stage *exactly*, so in the end we needed to trim a few millimeters away of the inset so it did not get stuck in the stage.
 
-Here the final piece cut from aluminium: <img class="rounded float-right" style="max-width:400px" alt="Stage inset" src="{{'/assets/images/stage-inset-assembled-nocover.jpg' | prepend: site.baseurl }}">
+Here the final piece cut from aluminium: <img class="rounded float-right img-fluid" style="max-width:400px" alt="Stage inset" src="{{'/assets/images/stage-inset-assembled-nocover.jpg' | prepend: site.baseurl }}">
