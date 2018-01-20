@@ -36,10 +36,10 @@ layout: page
   {% assign item_number = site.project_description | size %}
   {% assign container_size = 12 | divided_by: item_number %}
     {% for item in site.project_description %}
-
+      {% assign section_title = item.title | split "-" %}
       <div class="col-lg-{{ container_size }}">
         <img class="rounded-circle" src="{{ item.head_image | prepend:site.baseurl }}" alt="{{ item.head_image | remove: ".png" | replace: "-", " " | capitalize }}" width="140" height="140">
-        <h2> {{ item.title | replace: "-", " " | capitalize }} </h2>
+        <h2> {{ section_title[1] | capitalize }} </h2>
         <p></p>
         <p><a class="btn btn-secondary" href="#{{ item.title }}" role="button">View details &raquo;</a></p>
       </div>
