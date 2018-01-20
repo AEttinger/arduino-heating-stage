@@ -29,8 +29,6 @@ layout: page
 </div><!-- /.container -->
 
 
-
-
 <div class="container marketing">
   <div class="row">
   {% assign item_number = site.project_description | size %}
@@ -47,10 +45,18 @@ layout: page
   </div>
 </div>
 
-{% for item in site.project_description %}
-  {% assign section_title = item.title | split: " " %}
-  <div class="blog-post">
-    <h2 class="blog-post-title" id="{{ item.title }}">{{ section_title[1] }}</h2>
-    {{ item.content }}
+<main role="main" class="container">
+
+<div class="row">
+  <div class="col-sm-8 blog-main">
+    {% for item in site.project_description %}
+      {% assign section_title = item.title | split: " " %}
+      <div class="blog-post">
+        <h2 class="blog-post-title" id="{{ item.title }}">{{ section_title[1] }}</h2>
+        {{ item.content }}
+      </div>
   </div>
-{% endfor %}
+  {% endfor %}
+</div>
+
+</main>
