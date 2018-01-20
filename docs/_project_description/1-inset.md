@@ -2,7 +2,7 @@
 layout: desc
 head_image: '/assets/images/cad-stage-inset.png'
 ---
-<figure class="figure float-left">
+<figure class="figure float-left" style="max-width:400px">
   <img class="figure-img img-fluid rounded" style="max-width:400px" alt="CAD of the stage inset" src="{{'/assets/images/cad-stage-inset.png' | prepend: site.baseurl }}">
   <figcaption class="figure-caption">CAD of the stage inset</figcaption>
 </figure>
@@ -12,7 +12,7 @@ From a different project I knew that Peltier elements can be used for efficientl
 
 Just a small note, if anybody wants to use this design: In the CAD files I used dimensions fitting the round stage *exactly*, so in the end we needed to trim a few millimeters away of the inset so it did not get stuck in the stage.
 
-<figure class="figure float-right">
-  <img class="figure-img img-fluid rounded" style="max-width:400px" alt="Stage inset" src="{{'/assets/images/stage-inset-assembled-nocover.jpg' | prepend: site.baseurl }}">
+<figure class="figure float-right" style="max-width:400px">
+  <img class="figure-img img-fluid rounded" alt="Stage inset" src="{{'/assets/images/stage-inset-assembled-nocover.jpg' | prepend: site.baseurl }}">
   <figcaption class="figure-caption">The final piece cut from aluminium. Covers are removed to reveal cut-out for the peltier elements.</figcaption>
 </figure>
