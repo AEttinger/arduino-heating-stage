@@ -31,6 +31,7 @@ layout: page
           <h2 class="blog-post-title" id="{{ item.title | replace: " ", "-" | downcase }}">{{ section_title[1] }}</h2>
           {{ item.content }}
         </div>
+        <p></p>
       {% endfor %}
     </div>
   </div>
