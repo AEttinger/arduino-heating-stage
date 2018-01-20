@@ -28,8 +28,9 @@ layout: page
 
 </div><!-- /.container -->
 
-{% for post in site.posts %}
-  <p> {{ post }} </p>
+{% for item in site.project_description %}
+  <img class="rounded-circle" src="{{ item.head_image | prepend:site.baseurl }}" alt="Detail controller box" width="10" height="10">
+  <p> {{ item.title }} </p>
 {% endfor %}
 
 
