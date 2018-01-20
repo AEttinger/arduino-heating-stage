@@ -29,7 +29,7 @@ layout: page
 </div><!-- /.container -->
 
 {% for doc in site.category %}
-  {{ doc }}
+  <p> {{ doc }} </p>
 {% endfor %}
 
 
