@@ -31,7 +31,7 @@ layout: page
 
 
 
-<div class="container marketing>
+<div class="container marketing">
   <div class="row">
     {% for item in site.project_description %}
       {% assign item_number = site.poject_description | size %}
