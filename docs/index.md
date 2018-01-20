@@ -55,8 +55,8 @@ layout: page
         <h2 class="blog-post-title" id="{{ item.title }}">{{ section_title[1] }}</h2>
         {{ item.content }}
       </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 </main>
