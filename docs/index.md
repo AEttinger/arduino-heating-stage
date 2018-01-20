@@ -28,10 +28,19 @@ layout: page
 
 </div><!-- /.container -->
 
-{% for item in site.project_description %}
-  <img class="rounded-circle" src="{{ item.head_image | prepend:site.baseurl }}" alt="Detail controller box" width="10" height="10">
-  <p> {{ item.title }} </p>
-{% endfor %}
+
+<div class="container marketing>
+  <div class="row">
+    {% for item in site.project_description %}
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="{{ item.head_image | prepend:site.baseurl }}" alt="{{ item.head_image | remove: ".png" | replace: "-", " " | capitalize }}" width="140" height="140">
+        <h2> {{ item.title | replace: "-", " " | capitalize }} </h2>
+        <p></p>
+        <p><a class="btn btn-secondary" href="#{{ item.title }}" role="button">View details &raquo;</a></p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
 
 <div class="container">
