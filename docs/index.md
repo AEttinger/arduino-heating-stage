@@ -28,6 +28,11 @@ layout: page
 
 </div><!-- /.container -->
 
+{% for doc in page.category %}
+  {{ doc }}
+{% endfor %}
+
+
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
