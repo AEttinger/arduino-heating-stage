@@ -19,7 +19,7 @@ Just a small note, if anybody wants to use this design: In the CAD files I used 
 
 As a next step, I glued in the Peltier elements with electrically non-conductive, but heat-conducting epoxy glue. This stuff had tons of warning labels, so I did this under the fume hood. I also added one Thermistor next to the Peltiers to later establish a feedback loop for temperature control.
 
-<figure class="figure float-left" style="max-width:400px">
+<figure class="figure float-left" style="max-width:800px">
   <img class="figure-img img-fluid rounded" alt="Stage inset with Peltiers and Thermistors" src="{{'/assets/images/stage-inset-show-peltiers-thermistors.jpg' | prepend: site.baseurl }}">
     <img class="figure-img img-fluid rounded" alt="Stage inset" src="{{'/assets/images/stage-inset-thermistor-and-peltier-glued.jpg' | prepend: site.baseurl }}">
   <figcaption class="figure-caption">Inset with Peltier elements and thermistors before and after gluing.</figcaption>
