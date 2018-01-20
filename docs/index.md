@@ -20,18 +20,18 @@ layout: page
   </div>
 </div>
 
-<main role="main" class="container">
+<hr class="featurette-divider">
 
-<div class="row">
-  <div class="col-sm-8 blog-main">
-    {% for item in site.project_description %}
-      {% assign section_title = item.title | split: " " %}
-      <div class="blog-post">
-        <h2 class="blog-post-title" id="{{ item.title | replace: " ", "-" | downcase }}">{{ section_title[1] }}</h2>
-        {{ item.content }}
-      </div>
-    {% endfor %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 blog-main">
+      {% for item in site.project_description %}
+        {% assign section_title = item.title | split: " " %}
+        <div class="blog-post">
+          <h2 class="blog-post-title" id="{{ item.title | replace: " ", "-" | downcase }}">{{ section_title[1] }}</h2>
+          {{ item.content }}
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
-
-</main>
