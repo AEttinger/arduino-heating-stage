@@ -6,7 +6,7 @@ head_image: '/assets/images/cad-stage-inset.png'
   <img class="figure-img img-fluid rounded" style="max-width:400px" alt="CAD of the stage inset" src="{{'/assets/images/cad-stage-inset.png' | prepend: site.baseurl }}">
   <figcaption class="figure-caption">CAD of the stage inset</figcaption>
 </figure>
-For specific microinjection experiments, we needed a heating stage that would be compatible with our Leica microinjection microscope and hold large cover glasses. Commercial solutions were either expensive or not quite what we so I decided to build a custom stage heating inset with an Arduino.
+For specific microinjection experiments, we needed a heating stage that would be compatible with our Leica microinjection microscope and hold large cover glasses. Commercial solutions were either expensive or not quite what we wanted so I decided to build a custom stage heating inset with an Arduino.
 
 From a different project I knew that Peltier elements can be used for efficiently heating a stage (even though now I'd probably consider ceramic heating elements or heating strips if there is no cooling needed). Together with our workshop, we designed a stage inset that would fit the standard Leica stage holder, and have cut-outs for two Peltier elements.
 
