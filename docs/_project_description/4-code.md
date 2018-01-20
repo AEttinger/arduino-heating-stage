@@ -1,4 +1,4 @@
 ---
 layout: desc
-head_image: 'code.png'
+head_image: '/assets/images/code.png'
 ---
