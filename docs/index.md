@@ -28,8 +28,8 @@ layout: page
 
 </div><!-- /.container -->
 
-{% for doc in site.category %}
-  <p> {{ doc }} </p>
+{% for post in site.posts %}
+  <p> {{ post }} </p>
 {% endfor %}
 
 
