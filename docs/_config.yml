@@ -4,3 +4,5 @@ defaults:
     path: "assets/images/carousel"
    values:
     carousel: true
+collections:
+ - project_description

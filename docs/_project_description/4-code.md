@@ -1,4 +1,4 @@
 ---
-category: docs
+layout: desc
 head_image: 'code.png'
 ---
