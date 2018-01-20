@@ -28,7 +28,7 @@ layout: page
 
 </div><!-- /.container -->
 
-{% for doc in page.category %}
+{% for doc in site.category %}
   {{ doc }}
 {% endfor %}
 
@@ -36,8 +36,6 @@ layout: page
 <div class="container">
   <div class="row">
     <div class="col-lg-12">
-
-## Task
 
 ## Wiring
 
