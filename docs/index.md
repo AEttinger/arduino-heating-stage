@@ -29,10 +29,14 @@ layout: page
 </div><!-- /.container -->
 
 
+
+
 <div class="container marketing>
   <div class="row">
     {% for item in site.project_description %}
-      <div class="col-lg-4">
+      {% assign item_number = site.poject_description | size %}
+      {% assign container_size = 12 | divided_by: item_number }
+      <div class="col-lg-{{ container_size }}">
         <img class="rounded-circle" src="{{ item.head_image | prepend:site.baseurl }}" alt="{{ item.head_image | remove: ".png" | replace: "-", " " | capitalize }}" width="140" height="140">
         <h2> {{ item.title | replace: "-", " " | capitalize }} </h2>
         <p></p>
